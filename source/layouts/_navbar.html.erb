@@ -1,28 +1,39 @@
 <div class="navbar-wagon">
   <!-- Language flags -->
   <div>
-    <a href="/en/#" class="language-flag">
+    <a href='/en/<%= "#{current_page.path.split('/')[1]}" %>' class="language-flag">
       <%= image_tag 'United-Kingdom-icon.png' %>
     </a>
     /
-    <a href="/nl/#" class="language-flag">
+    <a href='/nl/<%= "#{current_page.path.split('/')[1]}" %>' class="language-flag">
       <%= image_tag 'Netherlands-icon.png' %>
     </a>
     /
-    <a href="/fr/#" class="language-flag">
+    <a href='/fr/<%= "#{current_page.path.split('/')[1]}" %>' class="language-flag">
       <%= image_tag 'France-icon.png' %>
     </a>
   </div>
 
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
-
-    <a href="" class="navbar-wagon-item navbar-wagon-link"><%= t(:home) %></a>
-    <a href="/<%= I18n.locale %>/thehouse.html" class="navbar-wagon-item navbar-wagon-link"><%= t(:house) %></a>
-    <a href="" class="navbar-wagon-item navbar-wagon-link"><%= t(:LaColle) %></a>
-    <a href="" class="navbar-wagon-item navbar-wagon-link"><%= t(:contact) %></a>
-    <a href="" class="navbar-wagon-item navbar-wagon-link"><%= t(:gallery) %></a>
-    <a href="" class="navbar-wagon-item navbar-wagon-link"><%= t(:environment) %></a>
+    <% link_to "/index.html", class: "navbar-wagon-item navbar-wagon-link" do %>
+      <%= t(:home) %>
+    <% end %>
+    <% link_to "/thehouse.html", class: "navbar-wagon-item navbar-wagon-link" do %>
+      <%= t(:house) %>
+    <% end %>
+    <% link_to "/lacolle.html", class: "navbar-wagon-item navbar-wagon-link" do %>
+      <%= t(:LaColle) %>
+    <% end %>
+    <% link_to "/contact.html", class: "navbar-wagon-item navbar-wagon-link" do %>
+      <%= t(:contact) %>
+    <% end %>
+    <% link_to "/gallery.html", class: "navbar-wagon-item navbar-wagon-link" do %>
+      <%= t(:gallery) %>
+    <% end %>
+    <% link_to "/environment.html", class: "navbar-wagon-item navbar-wagon-link" do %>
+      <%= t(:environment) %>
+    <% end %>
   </div>
 
   <!-- Dropdown appearing on mobile only -->
