@@ -1,17 +1,11 @@
 #home {
-  background-color: $background;
-  color: white;
+  color: $primary-dark;
   height: 100vh;
   display: flex;
-  align-items: center;
+  // align-items: center;
   justify-content: space-around;
-  text-align: center;
+  // text-align: center;
   p {
     margin-top: 1.5em;
-  }
-  a {
-    color: rgba(0,0,0,0.4);
-    font-weight: bold;
-    font-size: 16px;
   }
 }

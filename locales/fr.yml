@@ -1,0 +1,18 @@
+---
+fr:
+  description: 'under construction'
+  pets: 'Animaux interdits'
+  home: 'home'
+  house: 'la maison'
+  LaColle: 'La Colle sur Loup'
+  contact: 'contact'
+  gallery: 'gallery'
+  environment: 'les environs'
+  paths:
+    home: 'home'
+    house: 'la maison'
+    LaColle: 'La Colle sur Loup'
+    contact: 'contact'
+    gallery: 'gallery'
+    environment: 'les environs'
+  house_description: 'coming soon'

@@ -23,4 +23,4 @@ end
 
 activate :livereload
 
-activate :i18n
+activate :i18n, :path => "/:locale/", :mount_at_root => false

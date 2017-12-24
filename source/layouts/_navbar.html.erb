@@ -1,27 +1,28 @@
 <div class="navbar-wagon">
-  <!-- Logo -->
-  <a href="/" class="navbar-wagon-brand">
-    <img src="images/logo.png" alt="logo">
-  </a>
+  <!-- Language flags -->
+  <div>
+    <a href="/en/#" class="language-flag">
+      <%= image_tag 'United-Kingdom-icon.png' %>
+    </a>
+    /
+    <a href="/nl/#" class="language-flag">
+      <%= image_tag 'Netherlands-icon.png' %>
+    </a>
+    /
+    <a href="/fr/#" class="language-flag">
+      <%= image_tag 'France-icon.png' %>
+    </a>
+  </div>
 
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
 
-    <a href="" class="navbar-wagon-item navbar-wagon-link">Host</a>
-    <a href="" class="navbar-wagon-item navbar-wagon-link">Trips</a>
-    <a href="" class="navbar-wagon-item navbar-wagon-link">Messages</a>
-
-    <!-- Profile picture with dropdown list -->
-    <div class="navbar-wagon-item">
-      <div class="dropdown">
-        <img src="https://kitt.lewagon.com/placeholder/users/ssaunier" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
-        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-          <li><a href="#">Profile</a></li>
-          <li><a href="#">Dashboard</a></li>
-          <li><a href="#">Log Out</a></li>
-        </ul>
-      </div>
-    </div>
+    <a href="" class="navbar-wagon-item navbar-wagon-link"><%= t(:home) %></a>
+    <a href="/<%= I18n.locale %>/thehouse.html" class="navbar-wagon-item navbar-wagon-link"><%= t(:house) %></a>
+    <a href="" class="navbar-wagon-item navbar-wagon-link"><%= t(:LaColle) %></a>
+    <a href="" class="navbar-wagon-item navbar-wagon-link"><%= t(:contact) %></a>
+    <a href="" class="navbar-wagon-item navbar-wagon-link"><%= t(:gallery) %></a>
+    <a href="" class="navbar-wagon-item navbar-wagon-link"><%= t(:environment) %></a>
   </div>
 
   <!-- Dropdown appearing on mobile only -->
@@ -29,9 +30,12 @@
     <div class="dropdown">
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-        <li><a href="#">Host</a></li>
-        <li><a href="#">Trips</a></li>
-        <li><a href="#">Messagese</a></li>
+        <li><a href="#"><%= t(:home) %></a></li>
+        <li><a href="#"><%= t(:house) %></a></li>
+        <li><a href="#"><%= t(:LaColle) %></a></li>
+        <li><a href="#"><%= t(:contact) %></a></li>
+        <li><a href="#"><%= t(:gallery) %></a></li>
+        <li><a href="#"><%= t(:environment) %></a></li>
       </ul>
     </div>
   </div>
