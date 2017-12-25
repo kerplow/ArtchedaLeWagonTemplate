@@ -10,6 +10,7 @@ en:
   contact: 'contact'
   gallery: 'gallery'
   environment: 'surroundings'
+  contactmessage: "leave us a note or ask us a question"
   paths:
     home: 'home'
     house: 'the house'

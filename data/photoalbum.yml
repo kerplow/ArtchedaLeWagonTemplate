@@ -1,10 +1,20 @@
-- name: "master bedroom.jpg"
+- name: "masterbedroom.jpg"
   description: "the master bedroom"
 - name: "petanque.jpg"
   description: "petanque or 'jeu de boules'"
 - name: "ropeswinging.jpg"
   description: "ropeswinging at the river"
-- name: "the pool.jpg"
+- name: "thepool.jpg"
   description: "the pool"
-# - name:
-#   description:
+- name: "balconyview.jpg"
+  description: "view from the balcony"
+- name: "guestbedroom.jpg"
+  description: "One of the guest bedrooms"
+- name: "housefrompath.jpg"
+  description: "The house as seen from the path"
+- name: "outsidekitchen.jpg"
+  description: "the outside kitchen with 10 person table"
+- name: "eveningmeal.jpg"
+  description: "those summer nights"
+
+

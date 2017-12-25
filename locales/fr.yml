@@ -8,6 +8,7 @@ fr:
   contact: 'contact'
   gallery: 'gallery'
   environment: 'les environs'
+  contactmessage: "leave us a note or ask us a question(fr)"
   paths:
     home: 'home'
     house: 'la maison'
