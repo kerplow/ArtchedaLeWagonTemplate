@@ -12,7 +12,7 @@ De villa ligt  op een terrein van 1750m2, aan het einde van een rustige straat  
   LaColle: 'La Colle sur Loup'
   contact: 'contact'
   gallery: 'gallerij'
-  environment: 'ligging'
+  surroundings: 'ligging'
   contactmessage: "laat een berichtje achter of stel ons een vraag"
   paths:
     home: 'home'
@@ -20,7 +20,7 @@ De villa ligt  op een terrein van 1750m2, aan het einde van een rustige straat  
     LaColle: 'La Colle sur Loup'
     contact: 'contact'
     gallery: 'gallerij'
-    environment: 'ligging'
+    surroundings: 'ligging'
   house_description: 'Het huis is grondig vernieuwd  in 2014 :  sanitair, keuken, woongedeelte.. en beschikt over 5 kamers en 4 badkamers
 Gelijkvloers :
 - Living  zuid georiënteerd ( wifi, kabel TV, Hifi ) met twee ruime zithoeken.

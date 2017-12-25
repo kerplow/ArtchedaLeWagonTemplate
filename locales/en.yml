@@ -9,7 +9,7 @@ en:
   LaColle: 'La Colle sur Loup'
   contact: 'contact'
   gallery: 'gallery'
-  environment: 'surroundings'
+  surroundings: 'surroundings'
   contactmessage: "leave us a note or ask us a question"
   paths:
     home: 'home'
@@ -17,7 +17,7 @@ en:
     LaColle: 'La Colle sur Loup'
     contact: 'contact'
     gallery: 'gallery'
-    environment: 'surroundings'
+    surroundings: 'surroundings'
 
   house_description: "The house is divided in two parts :\n\n
 

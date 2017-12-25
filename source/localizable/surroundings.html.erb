@@ -1,0 +1,23 @@
+<!-- make the map also show markers of things to do nearby, and, when clicked, show estimated travel time and link to public transportation website with search query filled in -->
+<div
+  id="map"
+  style="width: 100%;
+  height: 600px;"
+></div>
+<!--split-->
+<script>
+  function initMap() {
+    var artcheda = {lat: 43.6849591, lng: 7.091228900000033};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 12,
+      center: artcheda
+    });
+    var marker = new google.maps.Marker({
+      position: artcheda,
+      map: map
+    });
+  }
+</script>
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkkxgLijXfu6o2x85SA7PQKLvBUF_emLY&callback=initMap">
+</script>

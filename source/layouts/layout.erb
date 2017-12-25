@@ -13,11 +13,19 @@
   </head>
   <body>
     <%= partial 'layouts/navbar' %>
+    <!-- split for after javascript part, use split in comment tags to divide page -->
+    <% content = yield %>
     <div class="container">
-      <%= yield %>
+      <% if content.include?("<!--split-->") %>
+        <%= content.split("<!--split-->").first %>
+        <%= partial 'layouts/footer' %>
+        <%= partial 'javascript' %>
+        <%= content.split("<!--split-->").last %>
+      <% else %>
+        <%= content %>
+        <%= partial 'layouts/footer' %>
+        <%= partial 'javascript' %>
+      <% end %>
     </div>
-    <%= partial 'layouts/footer' %>
-    <%= javascript_include_tag "https://maps.google.com/maps/api/js" %>
-      <%= yield(:after_js) %>
   </body>
 </html>

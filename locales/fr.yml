@@ -7,7 +7,7 @@ fr:
   LaColle: 'La Colle sur Loup'
   contact: 'contact'
   gallery: 'gallery'
-  environment: 'les environs'
+  surroundings: 'les environs'
   contactmessage: "leave us a note or ask us a question(fr)"
   paths:
     home: 'home'
@@ -15,5 +15,5 @@ fr:
     LaColle: 'La Colle sur Loup'
     contact: 'contact'
     gallery: 'gallery'
-    environment: 'les environs'
+    surroundings: 'les environs'
   house_description: 'coming soon'
