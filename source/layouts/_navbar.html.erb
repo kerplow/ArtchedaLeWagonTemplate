@@ -2,60 +2,35 @@
 
   <!-- Language flags -->
   <!-- extract page name from localized url: regex (yay!) for page part of the path (without directory or extension), then lookup page name from localized path -->
-  <% page = t("reverse_paths.#{current_page.path[/\/([^\.\/]+)\./,1]}") %>
-  <%= page %>
+  <% page_name = t("reverse_paths.#{current_page.path[/\/([^\.\/]+)\./,1]}") %>
   <!-- create localized urls by looking up path names for page names, TODO: remove .html (google: :directory_index) -->
   <div>
-    <a href='/en/<%= t("paths.#{page}", locale: :en) %>.html' class="language-flag">
-      <%= image_tag 'United-Kingdom-icon.png' %>
-    </a>
-    /
-    <a href='/nl/<%= t("paths.#{page}", locale: :nl) %>.html' class="language-flag">
-      <%= image_tag 'Netherlands-icon.png' %>
-    </a>
-    /
-    <a href='/fr/<%= t("paths.#{page}", locale: :fr) %>.html' class="language-flag">
-      <%= image_tag 'France-icon.png' %>
-    </a>
+    <% langs.each do |l| %>
+      <% path_name = t("paths.#{page_name}", locale: l) %>
+      <% link_to "/#{l}/#{path_name}.html", class: 'language-flag' do %>
+        <%= image_tag "#{l}.png" %>
+      <% end %>
+    <% end %>
   </div>
 
   <!-- Right Navigation -->
-  <!-- path names used as link names, looks nice and logical -->
+  <!-- path names used as url and link name, looks nice and feels logical -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
-    <% link_to "index.html", class: "navbar-wagon-item navbar-wagon-link" do %>
-      <%= t('paths.home') %>
-    <% end %>
-    <% link_to "#{t('paths.house')}.html", class: "navbar-wagon-item navbar-wagon-link" do %>
-      <%= t('paths.house') %>
-    <% end %>
-    <% link_to "#{t('paths.LaColle')}.html", class: "navbar-wagon-item navbar-wagon-link" do %>
-      <%= t('paths.LaColle') %>
-    <% end %>
-    <% link_to "#{t('paths.contact')}.html", class: "navbar-wagon-item navbar-wagon-link" do %>
-      <%= t('paths.contact') %>
-    <% end %>
-    <% link_to "#{t('paths.gallery')}.html", class: "navbar-wagon-item navbar-wagon-link" do %>
-      <%= t('paths.gallery') %>
-    <% end %>
-    <% link_to "#{t('paths.surroundings')}.html", class: "navbar-wagon-item navbar-wagon-link" do %>
-      <%= t('paths.surroundings') %>
+    <% t(:paths).each do |page,path| %>
+      <%= link_to path, "#{path}.html", class: "navbar-wagon-item navbar-wagon-link" %>
     <% end %>
   </div>
 
+
   <!-- Dropdown appearing on mobile only -->
+  <!-- same as normal navigation, using lewagon navbar -->
   <div class="navbar-wagon-item hidden-md hidden-lg">
     <div class="dropdown">
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-        <% t(:paths).each do |path| %>
-          <%= path %>
+        <% t(:paths).each do |page,path| %>
+          <li><%= link_to path, "#{path}.html" %></li>
         <% end %>
-        <li><a href="#"><%= t(:home) %></a></li>
-        <li><a href="#"><%= t(:house) %></a></li>
-        <li><a href="#"><%= t(:LaColle) %></a></li>
-        <li><a href="#"><%= t(:contact) %></a></li>
-        <li><a href="#"><%= t(:gallery) %></a></li>
-        <li><a href="#"><%= t(:surroundings) %></a></li>
       </ul>
     </div>
   </div>
