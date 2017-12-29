@@ -18,7 +18,7 @@ nl:
     contact: 'contact'
     gallery: 'gallerij'
     surroundings: 'ligging'
-  reversed_paths:
+  reverse_paths:
     'home': "home"
     'het huis': "house"
     'La Colle sur Loup': "LaColle"

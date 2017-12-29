@@ -12,7 +12,7 @@ fr:
     contact: 'contact'
     gallery: 'gallery'
     surroundings: 'les environs'
-  reversed_paths:
+  reverse_paths:
     'home': "home"
     'la maison': "house"
     'La Colle sur Loup': "LaColle"

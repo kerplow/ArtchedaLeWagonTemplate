@@ -23,26 +23,4 @@ end
 
 activate :livereload
 
-activate :i18n, :path => "/:locale/", :mount_at_root => false
-
-# helpers do
-
-#   def translated_url(locale)
-#     # Assuming /:locale/page.html
-#     page_name = current_page.split("/", 2).last.sub(/\..*$/, '')
-#     untranslated_path = t(:paths).index(page_name)
-
-#     begin
-#       translated = I18n.translate!("paths.#{untranslated_path}", locale: locale)
-#     rescue I18n::MissingTranslationData
-#       translated = untranslated_path
-#     end
-
-#     "/#{locale}/#{translated}.html"
-#   end
-
-#   def other_langs
-#     langs - [I18n.locale]
-#   end
-
-# end
+activate :i18n, :path => "/:locale/", :mount_at_root => false, langs: [:en, :nl, :fr]
