@@ -2,12 +2,8 @@
 fr:
   description: 'under construction'
   pets: 'Animaux interdits'
-  home: 'home'
-  house: 'la maison'
-  LaColle: 'La Colle sur Loup'
-  contact: 'contact'
-  gallery: 'gallery'
-  surroundings: 'les environs'
+  short_leave: 'les environs'
+  day_leave: 'on fait la journée'
   contactmessage: "leave us a note or ask us a question(fr)"
   paths:
     home: 'home'
@@ -16,4 +12,11 @@ fr:
     contact: 'contact'
     gallery: 'gallery'
     surroundings: 'les environs'
+  reversed_paths:
+    'home': "home"
+    'la maison': "house"
+    'La Colle sur Loup': "LaColle"
+    'contact': "contact"
+    'gallery': "gallery"
+    'les environs': "surroundings"
   house_description: 'coming soon'

@@ -1,15 +1,12 @@
 ---
 en:
+  hello: "Hello World"
   description: >
-    Villa Artcheda is a house  in La Colle sur loup, a village  situated between the French riviera and the southern Alps.
+    Villa Artcheda is a house  in La Colle sur loup, a village  situated between the French riviera and the southern Alps.<br>
     The house is located at the end  of a dead-end street in a residential area located on a steep  hill  on the ouskirts of  La Colle sur Loup, a nice village  next to Saint Paul de Vence, only a 15 minutes ride from Nice. It offers lodging to 8 to 14 people, has a nice garden and a 12 x 4 m swimming pool.'
   pets: 'No pets allowed'
-  home: 'home'
-  house: 'the house'
-  LaColle: 'La Colle sur Loup'
-  contact: 'contact'
-  gallery: 'gallery'
-  surroundings: 'surroundings'
+  short_leave: 'around the house'
+  day_leave: 'a day away'
   contactmessage: "leave us a note or ask us a question"
   paths:
     home: 'home'
@@ -18,20 +15,27 @@ en:
     contact: 'contact'
     gallery: 'gallery'
     surroundings: 'surroundings'
+  reverse_paths:
+    home: "home"
+    "the house": "house"
+    "La Colle sur Loup": "LaColle"
+    contact: "contact"
+    gallery: "gallery"
+    surroundings: "surroundings"
+  house_description: |
+    The house is divided in two parts :<br><br>
 
-  house_description: "The house is divided in two parts :\n\n
+    The eastern wing (main building ) has a living room ( HD flatscreen TV, cable network, Wifi, Blu ray, dvd, stereo ), a kitchen, one spare room ( housing 2 people if needed ) and a bathroom ( shower, toilet ) on the first floor.
+    On the second floor: three rooms and one bathroom ( bath, shower, toilet ) A Second  bathroom is under construction and will be ready in April 2013.<br><br>
 
-    The eastern wing  (main building ) has a living room ( HD flatscreen TV, cable network, Wifi, Blu ray, dvd, stereo ), a kitchen , one spare room ( housing 2 people if needed )  and a bathroom ( shower, toilet ) on the first floor.
-    On the second floor : three rooms and one bathroom ( bath , shower, toilet ) A Second  bathroom is under construction and will be ready in April 2013.\n\n
+    The western wing has a living room which can be turned in an additional room ( 4 beds ), one room , one bathroom  ( bath ), one toilet and one kitchen.<br><br>
 
-    The western wing has a living room which can be turned in an additional room ( 4 beds ), one room , one bathroom  ( bath ) , one toilet and one kitchen.\n\n
+    A large terrace faces the south/eastern  side of the house. The eastern part of the terrace is roofed ( BBQ )<br><br>
 
-    A large terrace   faces the south/eastern  side of the house . The eastern part of the terrace is roofed ( BBQ )\n\n
+    A 12 x 4 m swimming pool is situated  on the lower level of the garden<br><br>
 
-    A 12 x 4 m swimming pool is situated  on the lower level of the garden\n\n
+    A 'pétanque' court is located on the upper level of the garden .<br><br>
 
-    A 'pétanque' court is located on the upper level of the garden .\n\n
+    Table tennis and Badminton is available.<br><br>
 
-    Table tennis and Badminton is available.\n\n
-
-    For prices and availability : please contact Katrien Vanwambeke"
+    For prices and availability : please contact Katrien Vanwambeke
