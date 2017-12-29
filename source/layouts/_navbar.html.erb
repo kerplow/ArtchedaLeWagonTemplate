@@ -1,38 +1,44 @@
 <div class="navbar-wagon">
+
   <!-- Language flags -->
+  <!-- extract page name from localized url: regex (yay!) for page part of the path (without directory or extension), then lookup page name from localized path -->
+  <% page = t("reverse_paths.#{current_page.path[/\/([^\.\/]+)\./,1]}") %>
+  <%= page %>
+  <!-- create localized urls by looking up path names for page names, TODO: remove .html (google: :directory_index) -->
   <div>
-    <a href='/en/<%= "#{current_page.path.split('/')[1]}" %>' class="language-flag">
+    <a href='/en/<%= t("paths.#{page}", locale: :en) %>.html' class="language-flag">
       <%= image_tag 'United-Kingdom-icon.png' %>
     </a>
     /
-    <a href='/nl/<%= "#{current_page.path.split('/')[1]}" %>' class="language-flag">
+    <a href='/nl/<%= t("paths.#{page}", locale: :nl) %>.html' class="language-flag">
       <%= image_tag 'Netherlands-icon.png' %>
     </a>
     /
-    <a href='/fr/<%= "#{current_page.path.split('/')[1]}" %>' class="language-flag">
+    <a href='/fr/<%= t("paths.#{page}", locale: :fr) %>.html' class="language-flag">
       <%= image_tag 'France-icon.png' %>
     </a>
   </div>
 
   <!-- Right Navigation -->
+  <!-- path names used as link names, looks nice and logical -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
-    <% link_to "/index.html", class: "navbar-wagon-item navbar-wagon-link" do %>
-      <%= t(:home) %>
+    <% link_to "index.html", class: "navbar-wagon-item navbar-wagon-link" do %>
+      <%= t('paths.home') %>
     <% end %>
-    <% link_to "/thehouse.html", class: "navbar-wagon-item navbar-wagon-link" do %>
-      <%= t(:house) %>
+    <% link_to "#{t('paths.house')}.html", class: "navbar-wagon-item navbar-wagon-link" do %>
+      <%= t('paths.house') %>
     <% end %>
-    <% link_to "/lacolle.html", class: "navbar-wagon-item navbar-wagon-link" do %>
-      <%= t(:LaColle) %>
+    <% link_to "#{t('paths.LaColle')}.html", class: "navbar-wagon-item navbar-wagon-link" do %>
+      <%= t('paths.LaColle') %>
     <% end %>
-    <% link_to "/contact.html", class: "navbar-wagon-item navbar-wagon-link" do %>
-      <%= t(:contact) %>
+    <% link_to "#{t('paths.contact')}.html", class: "navbar-wagon-item navbar-wagon-link" do %>
+      <%= t('paths.contact') %>
     <% end %>
-    <% link_to "/gallery.html", class: "navbar-wagon-item navbar-wagon-link" do %>
-      <%= t(:gallery) %>
+    <% link_to "#{t('paths.gallery')}.html", class: "navbar-wagon-item navbar-wagon-link" do %>
+      <%= t('paths.gallery') %>
     <% end %>
-    <% link_to "/surroundings.html", class: "navbar-wagon-item navbar-wagon-link" do %>
-      <%= t(:surroundings) %>
+    <% link_to "#{t('paths.surroundings')}.html", class: "navbar-wagon-item navbar-wagon-link" do %>
+      <%= t('paths.surroundings') %>
     <% end %>
   </div>
 
@@ -41,6 +47,9 @@
     <div class="dropdown">
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+        <% t(:paths).each do |path| %>
+          <%= path %>
+        <% end %>
         <li><a href="#"><%= t(:home) %></a></li>
         <li><a href="#"><%= t(:house) %></a></li>
         <li><a href="#"><%= t(:LaColle) %></a></li>
